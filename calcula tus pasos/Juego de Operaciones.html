@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Juego de Operaciones</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="Tablero">
+    <h1 style="text-align: center;">Calcula tus pasos</h1>
+    <button id = "Jugar", onclick="playGame()">Jugar
+    </button>
+    <div id="Inicio-Objetivo">
+    </div>
+    <div class="Superior">
+      <div class="Mazo">
+        <div class="Espacio-Carta" id="Sacar-Mazo">
+          <div id="Pila-Inicial"></div>
+        </div>
+      </div>
+      <div class="Mano">
+        <div class="Espacio-Carta" id="mano-0"></div>
+        <div class="Espacio-Carta" id="mano-1"></div>
+        <div class="Espacio-Carta" id="mano-2"></div>
+        <div class="Espacio-Carta" id="mano-3"></div>
+        <div class="Espacio-Carta" id="mano-4"></div>
+        <div class="Espacio-Carta" id="mano-5"></div>
+      </div>
+    </div> 
+    <div class="Cadena-Operaciones">
+      <div class="Espacio-Valor-Inicial" style="font-size: 300%;" id="Resultado-0"></div>
+      <div class="Espacio-Operacion" id="Operacion-1"></div>
+      <div class="Espacio-Carta" id="operando-0"></div>
+
+      <h1 style="font-size: 300%;">=</h1>
+
+      <div class="Espacio-Resultado-1" id="Resultado-1"></div>
+      <div class="Espacio-Operacion" id="Operacion-2"></div>
+      <div class="Espacio-Carta" id="operando-1"></div>
+
+      <h1 style="font-size: 300%;">=</h1>
+
+      <div class="Espacio-Resultado-2" id="Resultado-2"></div>
+      <div class="Espacio-Operacion" id="Operacion-3"></div>
+      <div class="Espacio-Carta" id="operando-2"></div>
+
+      <h1 style="font-size: 300%;">=</h1>
+
+      <div class="Espacio-Resultado-3" id="Resultado-3"></div>
+      <div class="Espacio-Operacion" id="Operacion-4"></div>
+      <div class="Espacio-Carta" id="operando-3"></div>
+
+      <h1 style="font-size: 300%;">=</h1>
+    </div>
+    <div class="Inferior">
+      <div class="Comprobacion">
+        <h2>El resultado Final es:</h2>
+        <div class="Espacio-Resultado-4" id="Resultado-4"></div>
+        <h1 style="font-size: 300%;">-</h1>
+        <div class="Espacio-Objetivo" style="font-size: 300%;" id="Objetivo"></div>
+        <h1 style="font-size: 300%;">=</h1>
+        <div class="Espacio-Resultado-5" id="Resultado-5"></div>
+      </div>
+      <div class="score">
+        <h1 style="text-align: center;">Puntaje<h1>
+        <div class = "Espacio-Puntaje" id = "Puntaje"></div>
+      </div>
+      <div class="time">
+        <h1 style="text-align: center;">Tiempo<h1>
+        <div class = "Espacio-Reloj" id = "Reloj"></div>
+      </div>
+      <div class="Operaciones-Select">
+        <div class="Espacio-Suma" id="Suma">
+          <button id="Boton-Suma" style="font-size: 400%;" onclick="EscribeOperacion(Suma)">+</button>
+        </div>
+        <div class="Espacio-Resta" id="Resta">
+          <button id="Boton-Resta" style="font-size: 400%;" onclick="EscribeOperacion(Resta)">-</button>
+        </div>
+        <div class="Espacio-Producto" id="Producto">
+          <button id="Boton-Producto" style="font-size: 400%;"onclick="EscribeOperacion(Producto)">x</button>
+        </div>
+        <div class="Espacio-Division" id="Division">
+          <button id="Boton-Division" style="font-size: 400%;" onclick="EscribeOperacion(Division)">÷</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>   
+  <script src="script.js"></script>
+  <script src = "inicializacion.js"></script>
+</body>
+</html>

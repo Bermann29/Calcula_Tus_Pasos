@@ -1,0 +1,124 @@
+body {
+    text-align: normal;
+    background-color: rgb(206, 205, 240);
+  }
+  
+  h1 {
+    color: #c2198f;
+    align-self: center;
+  }
+  
+  #Jugar{
+    background: #99224a;
+    color: white;
+    background-color: #99224a;
+    border-radius: 45px 45px 45px 45px;
+    padding: 10px 20px;
+    font-weight: 700;
+    border: none;
+  }
+  #Inicio-Objetivo {
+    color: red;
+    position: absolute;
+  }
+  .Espacio-Carta {
+    border: 2px solid black;
+    width: 97px;
+    height: 151px;
+    margin: 4px;
+    position: relative;
+    border-radius: 10px;
+  }
+  .carta {
+    position: absolute;
+    border: 1px solid #888;
+    border-radius: 7px;
+    height: 153px;
+  }
+
+  .Superior {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Inferior {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Comprobacion {
+    display: flex;
+  }
+
+  .Operaciones-Select {
+    display: flex;
+  }
+
+  .Mazo {
+    display: flex;
+  }
+
+  .Mano {
+    display: flex;
+  }
+  .Espacio-Valor-Inicial, .Espacio-Objetivo{
+    border: 2px solid black;
+    width: 97px;
+    height: 151px;
+    margin: 4px;
+    position: relative;
+    text-align: center;
+    border-color: #d10c2d;
+    border-radius: 10px;
+  }
+      
+  .Espacio-Operacion{
+    width: 50px;
+    height: 150px;
+    margin: 2px;
+   position: relative;
+   font-size: 300%;
+   text-align: center;
+  }
+
+  .Espacio-Suma, .Espacio-Resta, .Espacio-Producto, .Espacio-Division{
+    margin: 2px;
+   position: relative;
+   align-self: center;
+  }
+
+  .Cadena-Operaciones{
+    display: flex;
+  }
+
+  .Espacio-Resultado-1, .Espacio-Resultado-2, .Espacio-Resultado-3, .Espacio-Resultado-4, 
+  .Espacio-Resultado-5{
+    border: 2px solid black;
+    width: 97px;
+    height: 151px;
+    margin: 4px;
+    position: relative;
+    text-align: center;
+    font-size: 300%;
+    border-radius: 15px;
+    border-color: rgb(24, 148, 13);
+  }
+
+  .Espacio-Puntaje{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    position: relative;
+    text-align: top;
+    align-self: center;
+  }
+
+  .Espacio-Reloj{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    position: relative;
+    text-align: top;
+    align-self: center;
+  }
+
